@@ -70,7 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\BackupTasksDA.cs" />
+    <Compile Include="Logs\DataAccess\LogsDA.cs" />
+    <Compile Include="BackupTasks\DataAccess\BackupTasksDA.cs" />
     <Compile Include="DataSource\DBContexts\BackupTask.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
@@ -99,15 +100,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logs\Models\DatabaseInputs\CreateLogInput.cs" />
+    <Compile Include="Logs\Models\DatabaseResults\CreateLogResult.cs" />
+    <Compile Include="Logs\Models\Validations\LogValidation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Models\DatabaseResults\DeleteSingleEntityResult.cs" />
-    <Compile Include="Shared\Models\DatabaseResults\ICreateEntityResult.cs" />
-    <Compile Include="Shared\Models\DatabaseResults\IDatabaseResultBase.cs" />
-    <Compile Include="Shared\Models\DatabaseResults\IDatabaseValidationErrors.cs" />
-    <Compile Include="Shared\Models\DatabaseResults\IUpdateEntityResult.cs" />
+    <Compile Include="Shared\Models\DatabaseResults\CreateEntityResult.cs" />
+    <Compile Include="Shared\Models\DatabaseResults\UpdateEntityResult.cs" />
     <Compile Include="Shared\Models\DatabaseResults\QueryEntitySetResult.cs" />
     <Compile Include="Shared\Models\DatabaseResults\QuerySingleEntityResult.cs" />
+    <Compile Include="Shared\Models\Validations\Errors\ErrorMessageLanguage.cs" />
+    <Compile Include="Shared\Models\Validations\Errors\ErrorMessages.cs" />
+    <Compile Include="Shared\Models\Validations\ValidationModel.cs" />
+    <Compile Include="Shared\Models\Validations\ValidationRoles\FileRole.cs" />
+    <Compile Include="Shared\Models\Validations\ValidationRoles\LengthValidationRole.cs" />
+    <Compile Include="Shared\Models\Validations\ValidationRoles\RangeValidationRole.cs" />
+    <Compile Include="Shared\Models\Validations\ValidationRoles\TimeRangeValidationRole.cs" />
     <Compile Include="Utils\ConcurrencyHandler.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace SQL_DB_Auto_Backup.DataSource.DbContexts
+namespace SQL_DB_Auto_Backup.DataSource.DBContexts
 {
     /// <summary>
     /// A partial <see cref="DatabaseContext"/> class that extends the features of the base <see cref="DatabaseContext"/> class.
